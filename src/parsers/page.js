@@ -27,6 +27,8 @@ class PageParser extends BaseParser {
       schema.object().keys({
         size: schema.number().integer().positive(),
         number: schema.number().integer().positive(),
+        next: schema.string().allow(null),
+        back: schema.string().allow(null)
       })
     )
   }
