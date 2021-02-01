@@ -28,8 +28,7 @@ class PageParser extends BaseParser {
         size: schema.number().integer().positive(),
         number: schema.number().integer().positive(),
         next: schema.string().allow(null),
-        back: schema.string().allow(null),
-        skip: schema.boolean().allow(null)
+        back: schema.string().allow(null)
       })
     )
   }
